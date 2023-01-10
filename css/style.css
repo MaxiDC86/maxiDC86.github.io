@@ -771,9 +771,9 @@ button {
 
 .footer {
   background: #02185b;
-  padding-top: 85px;
+  padding-top: 0px;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 
 .footer .titlepage {
@@ -813,7 +813,10 @@ button {
 .cont .read_more:hover {
   background-color: #000;
 }
-
+.afip-logo {
+  width: 100px;
+  height: 100px;
+}
 .copyright {
   margin-top: 90px;
   padding: 20px 0px;
