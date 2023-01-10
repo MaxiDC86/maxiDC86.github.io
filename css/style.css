@@ -406,7 +406,7 @@ button {
 
 .titlepage {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 
 .titlepage h2 {
@@ -686,7 +686,7 @@ button {
 
 .contact {
   background-color: #fff;
-  padding: 90px 0;
+  padding: 12px 0;
 }
 
 .contact .titlepage {
@@ -818,8 +818,8 @@ button {
   height: 100px;
 }
 .copyright {
-  margin-top: 90px;
-  padding: 20px 0px;
+  margin-top: 17px;
+  padding: 4px 0px;
   background-color: #fff;
 }
 
