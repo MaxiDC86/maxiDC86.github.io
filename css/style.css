@@ -494,6 +494,9 @@ button {
 #color_chang:hover.services_box p {
   color: #fff;
 }
+#color_chang:hover.services_box h4 {
+  color: #fff;
+}
 
 /** end services section **/
 
