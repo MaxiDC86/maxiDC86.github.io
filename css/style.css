@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  color: #666666;
+  color: #0c0c0c;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.80857;
@@ -287,15 +287,16 @@ button {
 
 .navigation.navbar-dark .navbar-nav .nav-link {
   padding: 0 25px;
-  color: #fff;
-  font-size: 16px;
+  color: rgb(8, 8, 8);
+  font-size: 18px;
+  font-weight: bold;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
-  color: #fbd10f;
+  color: #0f1ffb;
 }
 
 .navigation.navbar-dark .navbar-nav .active > .nav-link,
@@ -314,7 +315,9 @@ button {
 /*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
-
+li {
+  list-style-type: none;
+}
 .header {
   width: 100%;
   background: transparent;
@@ -327,7 +330,7 @@ button {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
+  color: rgb(15, 4, 4);
   line-height: 40px;
 }
 
@@ -338,7 +341,10 @@ button {
 }
 
 .banner_main {
-  background-color: #02185b;
+  /**background-color: #02185b;**/
+  background-image: url(../images/PET-pellets.jpg);
+  background-repeat: no-repeat;
+  background-size: 1550px 500px;
 }
 
 .text-bg {
@@ -347,7 +353,7 @@ button {
 }
 
 .text-bg h1 {
-  color: #ffe25b;
+  color: #00030a;
   font-size: 60px;
   padding-top: 40px;
   line-height: 80px;
@@ -455,7 +461,7 @@ button {
 }
 
 .services .services_box figure img {
-  width: 100%;
+  /*width: 100%; */
   margin-top: -65px;
 }
 
