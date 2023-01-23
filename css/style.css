@@ -332,6 +332,7 @@ li {
   text-transform: uppercase;
   color: rgb(15, 4, 4);
   line-height: 40px;
+ position: fixed;
 }
 
 /** banner section **/
