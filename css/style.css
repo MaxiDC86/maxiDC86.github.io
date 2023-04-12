@@ -332,7 +332,7 @@ li {
   text-transform: uppercase;
   color: rgb(15, 4, 4);
   line-height: 40px;
- position: fixed;
+  position: fixed;
 }
 
 /** banner section **/
@@ -345,7 +345,7 @@ li {
   /**background-color: #02185b;**/
   background-image: url(../images/PET-pellets.jpg);
   background-repeat: no-repeat;
-  background-size: 1550px 500px;
+  background-size: 1920px 500px;
 }
 
 .text-bg {
