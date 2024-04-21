@@ -1,0 +1,96 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+h1{
+    color: #2C8ECB;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.toolbar{
+    background: #2C8ECB;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.toolbar-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.toolbar-buttons a button{
+    border: none;
+    background: transparent;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.footer{
+    width: 100%;
+    height: fit-content;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background: #2C8ECB;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-logo{
+    padding: 25px;
+}
+
+.footer-nav-buttons{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.footer-nav-buttons a button{
+
+    background: transparent;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+
+.data-fiscal{
+    margin-right: 25px;
+}
