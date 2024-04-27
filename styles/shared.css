@@ -30,8 +30,6 @@ h1{
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
     z-index: 100;
 }
 
@@ -51,6 +49,7 @@ h1{
     color: white;
     margin: 10px;
     cursor: pointer;
+    font-size: 18px;
 }
 
 
@@ -75,20 +74,20 @@ h1{
 .footer-nav-buttons{
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 
 .footer-nav-buttons a button{
-
     background: transparent;
     color: white;
     padding: 10px;
     margin: 5px;
     border: none;
+    font-size: 18px;
 }
 
 .data-fiscal{
