@@ -198,6 +198,7 @@
   filter: gray; /* IE 6-9 */
   margin: 15px 25px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .client-logo:hover {
