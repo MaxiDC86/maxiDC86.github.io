@@ -5,12 +5,7 @@
 
 body{
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    display: inherit;
 }
 
 h1{
@@ -92,4 +87,103 @@ h1{
 
 .data-fiscal{
     margin-right: 25px;
+}
+
+#open-menu-button{
+    display: none;
+}
+
+#aside-menu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-start;
+    top: 0;
+    height: 100vh;
+    right: 0px;
+    width: 200px;
+    background: white;
+    z-index: 10000;
+}
+
+#aside-menu div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.aside-menu-buttons{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.aside-menu-buttons a button{ 
+    color: #2c8ecbfc;
+    background: transparent;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+#close-menu-button{
+
+    width: 70px;
+    background: transparent;
+    color: #2c8ecbfc;
+    border: none;
+    font-size: 18px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px){
+    #open-menu-button{
+        display: block;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 18px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .toolbar-buttons{
+        display: none;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav-buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo{
+        padding: 0px;
+    }
+
+    .data-fiscal{
+        margin: 0px;
+    }
+    
 }

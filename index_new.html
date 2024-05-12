@@ -35,6 +35,7 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./styles/shared.css" />
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="./styles/carrousel.css" />
@@ -45,11 +46,17 @@
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
       }
     </style>
-    <div class="toolbar">
+    <header class="toolbar">
       <div class="logo">
         <img src="images/logo.png" alt="logo" />
       </div>
-      <div class="toolbar-buttons">
+
+      <button id="open-menu-button">
+        <span class="material-symbols-outlined">
+          menu
+          </span>
+      </button>
+      <nav class="toolbar-buttons">
         <a href="#servicios">
           <button>Servicios</button>
         </a>
@@ -67,8 +74,38 @@
         <a href="#contacto">
           <button>Contacto</button>
         </a>
+      </nav>
+    </header>
+
+
+    <aside id="aside-menu">
+      <div>
+        <h4> Menu </h4>
+        <button id="close-menu-button">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
       </div>
-    </div>
+      <nav class="aside-menu-buttons">
+        <a href="#servicios">
+          <button>Servicios</button>
+        </a>
+        <a href="#equipo">
+          <button>Nosotros</button>
+        </a>
+        <a
+          href="download/Catalogo Conectores Industriales DCM_004.pdf"
+          download="Catalogo Conectores Industriales DCM"
+          target="_blank"
+        >
+          <button>Repuestos</button>
+        </a>
+        <a href="#contacto">
+          <button>Contacto</button>
+        </a>
+      </nav>
+    </aside>
 
     <div class="swiffy-slider">
       <ul class="slider-container">
@@ -107,7 +144,6 @@
               style="width: auto; height: 100%"
               alt="manos trabajando en electricidad"
             />
-            />
           </div>
         </li>
         <li>
@@ -141,8 +177,8 @@
         <button></button>
       </div>
     </div>
-
-    <div class="content">
+    
+    <section class="content">
       <h1>Servicios Industriales</h1>
       <div class="services" id="servicios">
         <div class="service-card">
@@ -317,9 +353,9 @@
           </button>
         </a>
       </div>
-    </div>
+    </section>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footer-logo">
         <img src="./images/logo.png" alt="" />
       </div>
@@ -343,6 +379,7 @@
       >
         <img src="./images/data-fiscal.png" class="data-fiscal" />
       </a>
-    </div>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
