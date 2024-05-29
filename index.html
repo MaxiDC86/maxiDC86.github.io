@@ -1,420 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-P0DRVBDY5X"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-P0DRVBDY5X");
-    </script>
-    <!-- basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <!-- site metas -->
-    <title>DCM Industrial Services</title>
-    <meta name="keywords" content="maquinas, hidráulicas, mecánica, electrónica" />
-    <meta name="description" content="Somos una empresa dedicada a resolver los problemas de nuestros cliente." />
-    <meta name="author" content="Dias Correia Maximiliano" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- style css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- favicon -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCM Servicios Industriales</title>
     <link rel="icon" href="images/favicon.png" type="image/png" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-    <!-- Tweaks for older IEs-->
+    <meta
+      name="keywords"
+      content="maquinas, hidráulicas, mecánica, electrónica"
+    />
+    <meta
+      name="description"
+      content="Somos una empresa dedicada a resolver los problemas Industriales de nuestros clientes."
+    />
+    <meta name="author" content="Dias Correia Maximiliano" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-      media="screen"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
-    ><![endif]-->
-  </head>
-  <!-- body -->
-  <body class="main-layout">
-    <div class="container-btn">
-      <a href="http://api.whatsapp.com/send?phone=5491159574799">
-        <img class="btn-wsp" src="./images/whatsapp_icon.png" alt="" />
-      </a>
-    </div>
-    <!-- header -->
-    <header>
-      <!-- header inner -->
-      <div class="header">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-              <div class="full">
-                <div class="center-desk">
-                  <div class="logo">
-                    <a href="index.html"
-                      ><img src="images/logo.png" alt="DCM Industrial Services"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-              <nav class="navigation navbar navbar-expand-md navbar-dark">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarsExample04"
-                  aria-controls="navbarsExample04"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExample04">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#download">Descarga</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js" crossorigin="anonymous" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/carrousel.css" />
+  </head>
+  <body>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <header class="toolbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" />
       </div>
+
+      <button id="open-menu-button">
+        <span class="material-symbols-outlined">
+          menu
+          </span>
+      </button>
+      <nav class="toolbar-buttons">
+        <a href="#servicios">
+          <button>Servicios</button>
+        </a>
+        <a href="#equipo">
+          <button>Nosotros</button>
+        </a>
+
+        <a
+          href="download/Catalogo Conectores Industriales DCM_004.pdf"
+          download="Catalogo Conectores Industriales DCM"
+          target="_blank"
+        >
+          <button>Repuestos</button>
+        </a>
+        <a href="#contacto">
+          <button>Contacto</button>
+        </a>
+      </nav>
     </header>
-    <!-- end header inner -->
-    <!-- end header -->
-    <!-- banner -->
-    <section class="banner_main">
-      <div class="container-fluid">
-        <div class="row d_flex">
-          <div class="col-xl-6 col-lg-6 col-md-12 padding_lert2">
-            <div class="text-img">
-              <figure>
-                <img
-                  src="images/banner.png"
-                  alt="maquinas inyectoras de plástico"
-                />
-              </figure>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-12">
-            <div class="text-bg">
-              <h1>
-                Servicios de mantenimiento para maquinas hidráulicas.
-              </h1>
-            </div>
-          </div>
-        </div>
+
+
+    <aside id="aside-menu">
+      <div>
+        <h4> Menu </h4>
+        <button id="close-menu-button">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
       </div>
-    </section>
-    <!-- end banner -->
-    <!-- services -->
-    <div id="services" class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="titlepage">
-              <h2>Brindamos una amplia variedad de servicios:</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg_full">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 margin_bott">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <img
-                        src="images/clamp.png"
-                        alt="repuestos electrónicos"
-                        width="310"
-                        height="140"
-                      />
-                    </figure>
-                    <h3>Mantenimiento hidráulico.</h3>
-                    <h4>
-                      Personal capacitado para cambio de sellos y calibración de
-                      ejes.
-                    </h4>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 margin_bott">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <img
-                        src="images/repuestos.jpg"
-                        alt="preformas pet"
-                        width="310"
-                        height="140"
-                      />
-                    </figure>
-                    <h3>Repuestos.</h3>
-                    <h4>
-                      Tenemos una amplia variedad de repuestos nuevos y de
-                      segunda mano.
-                    </h4>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <img
-                        src="images/level.png"
-                        alt="moldes y coladas calientes"
-                        width="310"
-                        height="140"
-                      />
-                    </figure>
-                    <h3>Nivelación de maquinas.</h3>
-                    <h4>Preventivo y corrección.</h4>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg_full">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 margin_bott">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <img
-                        src="images/work_img1.jpg"
-                        alt="servo válvulas"
-                        width="310"
-                        height="140"
-                      />
-                    </figure>
-                    <h3>Servo válvulas.</h3>
-                    <h4>Reparación, calibración y repuestos.</h4>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 margin_bott">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <img
-                        src="images/work_img2.jpg"
-                        alt="servicio de reparacion de maquinas"
-                        width="310"
-                        height="140"
-                      />
-                    </figure>
-                    <h3>Preformas de PET</h3>
-                    <h4>Ajuste de optimización en calidad y desempeño.</h4>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <img
-                        src="images/work_img3.jpg"
-                        alt="asistencia técnica"
-                        width="310"
-                        height="140"
-                      />
-                    </figure>
-                    <h3>Moldes y coladas calientes.</h3>
-                    <h4>Limpieza, preventivo y reparación.</h4>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg_full">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 margin_bott">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <img
-                        src="images/audit2.jpg"
-                        alt="Auditorias en maquinas"
-                        width="310"
-                        height="140"
-                      />
-                    </figure>
-                    <h3>Auditorias</h3>
-                    <h4>Informe del estado actual del equipamiento.</h4>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 margin_bott">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <a href="entrenamiento.html">
-                        <img
-                          src="images/entrenamiento hidraulico.jpg"
-                          alt="entrenamiento en maquinas"
-                          width="310"
-                          height="140"
-                        />
-                      </a>
-                    </figure>
-                    <h3>Entrenamientos en planta.</h3>
-                    <h4>Teórico y práctico</h4>
-                    <p></p>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                  <div id="color_chang" class="services_box">
-                    <figure>
-                      <img
-                        src="images/relocation.jpg"
-                        alt="moving machines"
-                        width="310"
-                        height="140"
-                      />
-                    </figure>
-                    <h3>Reubicación de maquinas</h3>
-                    <h4>Desarme y armado del equipamiento.</h4>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end services -->
-    </div>
-    <!-- contact -->
-    <div id="contact" class="contact">
-      <div class="container">
-        <div class="row d_flex">
-          <div class="col-md-6">
-            <div class="business">
-              <div class="titlepage">
-                <h2>Contacto</h2>
-              </div>
-              <h4>
-                <strong>Servicio técnico y repuestos:</strong> Maximiliano Dias
-                Correia
-              </h4>
-              <h4><strong>Email:</strong> mdiascorreia@protonmail.com</h4>
-              <h4><strong>Celular:</strong> +54 9 1159574799</h4>
-              <h4>
-              <h4>
-                <strong>Servicio técnico y repuestos:</strong> Gonzalo Estigarribia
-              </h4>
-              <h4><strong>Email:</strong> gestigar39@gmail.com</h4>
-              <h4><strong>Celular:</strong> +54 9 1139098200</h4>
-              <h4>
-                <strong>Dirección:</strong> Independencia 1143, Villa Adelina,
-                Buenos Aires, Argentina
-              </h4>
+      <nav class="aside-menu-buttons">
+        <a href="#servicios">
+          <button>Servicios</button>
+        </a>
+        <a href="#equipo">
+          <button>Nosotros</button>
+        </a>
+        <a
+          href="download/Catalogo Conectores Industriales DCM_004.pdf"
+          download="Catalogo Conectores Industriales DCM"
+          target="_blank"
+        >
+          <button>Repuestos</button>
+        </a>
+        <a href="#contacto">
+          <button>Contacto</button>
+        </a>
+      </nav>
+    </aside>
+
+    <div class="swiffy-slider slider-nav-animation slider-nav-animation-fadein">
+      <ul class="slider-container">
+        <li>
+          <div class="slide-content">
+            <div class="slide-card">
+              <h1>Servicios hidráulicos.</h1>
+              <p>
+                Cuente con nosotros para mantener sus equipos hidráulicos en
+                optimas condiciones.
+              </p>
+              <a href="#contacto">
+                <button>Contacto</button>
+              </a>
             </div>
             <img
-              src="images/paises_small.png"
-              alt="paises que asistimos"
-              width="400"
-              height="300"
+              src="./images/carrousel/1.jpeg"
+              class="slide-pic-desktop"
+            />
+            <img
+              src="./images/carrousel/mobile/1.png"
+              class="slide-pic-mobile"
             />
           </div>
-        </div>
+        </li>
+        <li>
+          <div class="slide-content">
+            <div class="slide-card">
+              <h1>Servicios Eléctricos</h1>
+              <p>
+                Realizamos una amplia variedad de trabajos eléctricos desde PLC,
+                variadores de velocidad, servomotores, etc.
+              </p>
+              <a href="#contacto">
+                <button>Contacto</button>
+              </a>
+            </div>
+            <img
+              src="./images/carrousel/2.jpeg"
+              class="slide-pic-desktop"
+              alt="manos trabajando en electricidad"
+            />
+            <img
+              src="./images/carrousel/mobile/2.png"
+              class="slide-pic-mobile"
+            />
+          </div>
+        </li>
+        <li>
+          <div class="slide-content">
+            <div class="slide-card">
+              <h1>Repuestos Industriales</h1>
+              <p>
+                Podemos asesorarle y encontrar el repuesto indicado a su
+                necesidad. También contamos con busqueda de repuestos de segunda
+                mano.
+              </p>
+              <a href="#contacto">
+                <button>contacto</button>
+              </a>
+            </div>
+            <img
+              src="./images/carrousel/3.jpeg"
+              class="slide-pic-desktop"
+              alt="repuestos industriales"
+            />
+            <img
+              src="./images/carrousel/mobile/3.png"
+              class="slide-pic-mobile"
+            />
+          </div>
+        </li>
+      </ul>
+
+      <button type="button" class="slider-nav"></button>
+      <button type="button" class="slider-nav slider-nav-next"></button>
+
+      <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
       </div>
     </div>
-    <!-- end contact -->
-    <!--Descarga-->
-    <div id="download" class="downloaded">
-      <div class="container">
-        <div class="row d_flex">
-          <div class="col-md-6">
-            <div class="business">
-              <div class="titlepage">
-                <h3>Descarga</h3>
-                <a href="download/Catalogo Conectores Industriales DCM_004.pdf" download="Catalogo Conectores Industriales DCM">
-                 Descargar catalogo de conectores industriales.
-                  </a>
-            </div>
-          </div>
+    <section class="content">
+      <h1>Servicios Industriales</h1>
+      <div class="services" id="servicios">
+        <div class="service-card">
+          <img src="./images/icons/precision_manufacturing.png" alt="" />
+          <h2>Mantenimiento Hidráulico</h2>
+          <p>
+            Cuente con nosotros para mantener sus equipos hidráulicos en optimas
+            condiciones.
+          </p>
+          <a href="#contacto">
+            <button>Contactanos</button>
+          </a>
+        </div>
+        <div class="service-card">
+          <img src="./images/icons/robot_arm.png" alt="" />
+          <h2>Mantenimiento Eléctrico</h2>
+          <p>
+            Realizamos una amplia variedad de trabajos eléctricos desde PLC,
+            variadores de velocidad, servomotores, etc.
+          </p>
+          <a href="#contacto">
+            <button>Contactanos</button>
+          </a>
+        </div>
+        <div class="service-card">
+          <img src="./images/icons/location.png" alt="" />
+          <h2>Reubicación de maquinas</h2>
+          <p>
+            Realizamos el desarme y armado del equipo luego de una reubicación.
+          </p>
+          <a href="#contacto">
+            <button>Contactanos</button>
+          </a>
+        </div>
+        <div class="service-card">
+          <img src="./images/icons/people.png" alt="" />
+          <h2>Capacitación en planta</h2>
+          <p>
+            Dictamos capacitaciones para personal de mantenimiento y operadores
+            de forma teórica y práctica.
+          </p>
+          <a href="#contacto">
+            <button>Contáctenos</button>
+          </a>
+        </div>
+        <div class="service-card">
+          <img src="./images/icons/gears.png" alt="" />
+          <h2>Repuestos Industriales</h2>
+          <p>
+            Podemos asesorarle y encontrar el repuesto indicado a su necesidad.
+            También contamos con busqueda de repuestos de segunda mano.
+          </p>
+          <a href="#contacto">
+            <button>Contactanos</button>
+          </a>
+        </div>
+        <div class="service-card">
+          <img src="./images/icons/checklist.png" alt="" />
+          <h2>Auditorias</h2>
+          <p>
+            Generamos niformes del estado actual de su equipo y le entregamos un
+            plan de mantenimiento efectivo.
+          </p>
+          <a href="#contacto">
+            <button>Contactanos</button>
+          </a>
+        </div>
       </div>
-    </div>
-    <!--end Descarga-->
-    <!--  footer -->
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 offset-md-2">
-              <div class="cont">
-                <a
-                  href="http://qr.afip.gob.ar/?qr=RjLhwCg-B18kr2rxVF7PXA,,"
-                  target="_F960AFIPInfo"
-                >
-                  <img class="afip-logo" src="images/DATAWEB.jpg" border="0" alt="logo afip"
-                /></a>
-              </div>
+
+      <div class="team" id="equipo">
+        <h1>Nosotros</h1>
+        <p>
+          ¡Bienvenidos a DCM Industrial Services! Somos una empresa joven y
+          dinámica especializada en resolver problemas hidráulicos, eléctricos y
+          de repuestos en el ámbito industrial. Nuestro enfoque se centra en
+          ofrecer soluciones eficientes y efectivas para mantener tus
+          operaciones en funcionamiento sin problemas. Con especialización en
+          inyectoras plásticas, nuestro equipo altamente capacitado está
+          comprometido con la excelencia en cada proyecto. En DCM Industrial
+          Services, no solo proporcionamos servicios, ofrecemos soluciones que
+          te ayudan a alcanzar tus objetivos comerciales. ¡Permítenos ser tu
+          socio de confianza en el éxito de tu empresa!
+        </p>
+        <!-- <div class="team-container">
+          <div class="team-card">
+            <img src="./images/team/1.png" alt="" />
+            <h2>Nombre</h2>
+            <p>Posición</p>
+          </div>
+          <div class="team-card">
+            <img src="./images/team/2.png" alt="" />
+            <h2>Nombre</h2>
+            <p>Posición</p>
+          </div>
+          <div class="team-card">
+            <img src="./images/team/3.png" alt="" />
+            <h2>Nombre</h2>
+            <p>Posición</p>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="clients">
+        <h1>Clientes que confian en nosotros</h1>
+
+        <div class="client-list">
+          <img class="client-logo" src="./images/clients/1.png" alt="" />
+          <img class="client-logo" src="./images/clients/2.png" alt="" />
+          <img class="client-logo" src="./images/clients/3.png" alt="" />
+          <img class="client-logo" src="./images/clients/4.png" alt="" />
+          <img class="client-logo" src="./images/clients/5.png" alt="" />
+          <img class="client-logo" src="./images/clients/6.png" alt="" />
+          <img class="client-logo" src="./images/clients/7.png" alt="" />
+          <img class="client-logo" src="./images/clients/8.png" alt="" />
+          <img class="client-logo" src="./images/clients/9.png" alt="" />
+          <img class="client-logo" src="./images/clients/10.png" alt="" />
+        </div>
+      </div>
+
+      <div class="contact" id="contacto">
+        <div class="contact-card">
+          <h1>Contáctenos</h1>
+          <p>¡Confíe en nosotros para mantener su negocio en movimiento!</p>
+
+          <div class="contact-card-body">
+            <div>
+              <h4>Maximiliano Dias Correia</h4>
+              <p>&#128222; +54 9 1159574799</p>
+              <p>
+                <span class="material-symbols-outlined"> mail </span>
+                mdiascorreia@protonmail.com
+              </p>
+            </div>
+            <div>
+              <h4>Gonzalo Estigarribia</h4>
+              <p>&#128222; +54 9 1139098200</p>
+              <p>
+                <span class="material-symbols-outlined"> mail </span>
+                gestigar39@gmail.com
+              </p>
             </div>
           </div>
         </div>
-        <div class="copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <p>© 2024 All Rights Reserved.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <a
+          href="https://api.whatsapp.com/send?phone=5491159574799"
+          target="_blank"
+        >
+          <button class="contact-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#ffffff"
+              height="25px"
+              width="25px"
+              version="1.1"
+              id="Layer_1"
+              viewBox="0 0 308 308"
+              xml:space="preserve"
+            >
+              <g id="XMLID_468_">
+                <path
+                  id="XMLID_469_"
+                  d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156   c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687   c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887   c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153   c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348   c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802   c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922   c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0   c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458   C233.168,179.508,230.845,178.393,227.904,176.981z"
+                />
+                <path
+                  id="XMLID_470_"
+                  d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716   c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396   c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z    M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188   l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677   c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867   C276.546,215.678,222.799,268.994,156.734,268.994z"
+                />
+              </g>
+            </svg>
+            Contactar
+          </button>
+        </a>
       </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <div class="footer-nav-buttons">
+        <a href="#servicios">
+          <button>Servicios</button>
+        </a>
+        <a href="#equipo">
+          <button>Nosotros</button>
+        </a>
+        <a href="#clients">
+          <button>Repuestos</button>
+        </a>
+        <a href="#contacto">
+          <button>Contacto</button>
+        </a>
+      </div>
+      <a
+        href="http://qr.afip.gob.ar/?qr=RjLhwCg-B18kr2rxVF7PXA,,"
+        target="_F960AFIPInfo"
+      >
+        <img src="./images/data-fiscal.png" class="data-fiscal" />
+      </a>
     </footer>
-    <!-- end footer -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
