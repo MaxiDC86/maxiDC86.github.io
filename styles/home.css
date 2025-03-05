@@ -1,4 +1,4 @@
-.content{
+.content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -66,7 +66,6 @@
   color: #fd6512;
 }
 
-
 .service-card:hover {
   height: 390px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -121,7 +120,6 @@
   padding: 25px;
 }
 
-
 .contact-card {
 }
 
@@ -131,7 +129,7 @@
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .contact-card-body div h4 {
@@ -227,8 +225,7 @@
     max-width: 90vw;
   }
 
-  .carrousel{
+  .carrousel {
     display: none;
   }
-  
 }

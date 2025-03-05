@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Si llega al final, vuelve a la primera diapositiva
     if (index >= slides.length) {
       index = 0;
-      slides[0].scrollIntoView({ behavior: "smooth" });
+      //slides[0].scrollIntoView({ behavior: "smooth" });
+      sliderContainer.scrollLeft = 0; // Reinicia el scroll sin mover la página
     } else {
       nextButton.click();
     }
