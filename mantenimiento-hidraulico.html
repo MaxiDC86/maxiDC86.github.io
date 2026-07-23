@@ -46,13 +46,39 @@
           </g>
         </g>
       </symbol>
+      <symbol id="flag-ar-es" viewBox="0 0 60 40">
+        <clipPath id="flag-ar-clip"><rect width="30" height="40" /></clipPath>
+        <clipPath id="flag-es-clip"><rect x="30" width="30" height="40" /></clipPath>
+        <!-- Mitad Argentina -->
+        <g clip-path="url(#flag-ar-clip)">
+          <rect width="30" height="40" fill="#74acdf" />
+          <rect y="13.33" width="30" height="13.34" fill="#ffffff" />
+          <circle cx="15" cy="20" r="3.1" fill="#f6b40e" />
+          <circle cx="15" cy="20" r="1.7" fill="none" stroke="#843511" stroke-width="0.4" />
+          <g stroke="#f6b40e" stroke-width="0.7">
+            <line x1="15" y1="14.6" x2="15" y2="16.3" />
+            <line x1="15" y1="23.7" x2="15" y2="25.4" />
+            <line x1="9.6" y1="20" x2="11.3" y2="20" />
+            <line x1="18.7" y1="20" x2="20.4" y2="20" />
+            <line x1="11.2" y1="16.2" x2="12.4" y2="17.4" />
+            <line x1="17.6" y1="22.6" x2="18.8" y2="23.8" />
+            <line x1="18.8" y1="16.2" x2="17.6" y2="17.4" />
+            <line x1="12.4" y1="22.6" x2="11.2" y2="23.8" />
+          </g>
+        </g>
+        <!-- Mitad Espana -->
+        <g clip-path="url(#flag-es-clip)">
+          <rect x="30" width="30" height="40" fill="#aa151b" />
+          <rect x="30" y="10" width="30" height="20" fill="#f1bf00" />
+        </g>
+      </symbol>
     </svg>
 
     <header class="toolbar">
       <a href="index.html" class="logo"><img src="images/logo_docu.png" alt="DCM Industrial" /></a>
       <nav class="gallery-nav">
         <button class="lang-toggle" type="button" title="View in English" aria-label="Switch language to English">
-          <svg class="lang-flag" viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-uk-us"></use></svg>
+          <svg class="lang-flag" viewBox="0 0 60 40" aria-hidden="true"><use href="#flag-ar-es"></use></svg>
         </button>
         <a href="index.html"><button data-en="Home">Inicio</button></a>
         <a href="index.html#servicios"><button data-en="Services">Servicios</button></a>
@@ -92,7 +118,7 @@
     </footer>
 
     <script>
-      window.GALLERY = { folder: "images/galeria/hidraulico/", count: 10, alt: "Trabajo de mantenimiento hidráulico" };
+      window.GALLERY = { folder: "images/galeria/hidraulico/", count: 6, alt: "Trabajo de mantenimiento hidráulico" };
     </script>
     <script src="galeria.js"></script>
   </body>

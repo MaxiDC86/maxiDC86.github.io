@@ -36,6 +36,11 @@ window.onscroll = function (e) {
       el.textContent = isEn ? el.getAttribute("data-en") : el.dataset.es;
     });
     document.documentElement.lang = isEn ? "en" : "es";
+    // La banderita refleja el idioma ACTUAL: ES -> Argentina/España, EN -> UK/USA
+    const flagRef = isEn ? "#flag-uk-us" : "#flag-ar-es";
+    document.querySelectorAll(".lang-flag use").forEach((u) => {
+      u.setAttribute("href", flagRef);
+    });
     toggles.forEach((btn) => {
       btn.classList.toggle("is-en", isEn);
       btn.setAttribute("aria-pressed", String(isEn));
