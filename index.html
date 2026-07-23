@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,6 +56,57 @@
     </script>
   </head>
   <body>
+    <!-- Bandera combinada Reino Unido / Estados Unidos (definida una vez, reutilizable) -->
+    <svg
+      width="0"
+      height="0"
+      style="position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <symbol id="flag-uk-us" viewBox="0 0 60 40">
+        <clipPath id="flag-uk-clip"><rect width="30" height="40" /></clipPath>
+        <clipPath id="flag-us-clip">
+          <rect x="30" width="30" height="40" />
+        </clipPath>
+        <!-- Mitad Reino Unido (Union Jack) -->
+        <g clip-path="url(#flag-uk-clip)">
+          <rect width="30" height="40" fill="#012169" />
+          <path d="M0,0 30,40 M30,0 0,40" stroke="#ffffff" stroke-width="8" />
+          <path d="M0,0 30,40 M30,0 0,40" stroke="#c8102e" stroke-width="3" />
+          <rect x="11" width="8" height="40" fill="#ffffff" />
+          <rect y="16" width="30" height="8" fill="#ffffff" />
+          <rect x="12.5" width="5" height="40" fill="#c8102e" />
+          <rect y="17.5" width="30" height="5" fill="#c8102e" />
+        </g>
+        <!-- Mitad Estados Unidos (Stars & Stripes) -->
+        <g clip-path="url(#flag-us-clip)">
+          <rect x="30" width="30" height="40" fill="#b22234" />
+          <rect x="30" y="3.08" width="30" height="3.08" fill="#ffffff" />
+          <rect x="30" y="9.23" width="30" height="3.08" fill="#ffffff" />
+          <rect x="30" y="15.38" width="30" height="3.08" fill="#ffffff" />
+          <rect x="30" y="21.54" width="30" height="3.08" fill="#ffffff" />
+          <rect x="30" y="27.69" width="30" height="3.08" fill="#ffffff" />
+          <rect x="30" y="33.85" width="30" height="3.08" fill="#ffffff" />
+          <rect x="30" width="13" height="21.54" fill="#3c3b6e" />
+          <g fill="#ffffff">
+            <circle cx="32.6" cy="3.5" r="0.7" />
+            <circle cx="36" cy="3.5" r="0.7" />
+            <circle cx="39.4" cy="3.5" r="0.7" />
+            <circle cx="34.3" cy="7.5" r="0.7" />
+            <circle cx="37.7" cy="7.5" r="0.7" />
+            <circle cx="32.6" cy="11.2" r="0.7" />
+            <circle cx="36" cy="11.2" r="0.7" />
+            <circle cx="39.4" cy="11.2" r="0.7" />
+            <circle cx="34.3" cy="15" r="0.7" />
+            <circle cx="37.7" cy="15" r="0.7" />
+            <circle cx="32.6" cy="18.7" r="0.7" />
+            <circle cx="36" cy="18.7" r="0.7" />
+            <circle cx="39.4" cy="18.7" r="0.7" />
+          </g>
+        </g>
+      </symbol>
+    </svg>
     <style>
       .material-symbols-outlined {
         font-variation-settings:
@@ -74,14 +125,24 @@
         <span class="material-symbols-outlined"> menu </span>
       </button>
       <nav class="toolbar-buttons">
+        <button
+          class="lang-toggle"
+          type="button"
+          title="View in English"
+          aria-label="Switch language to English"
+        >
+          <svg class="lang-flag" viewBox="0 0 60 40" aria-hidden="true">
+            <use href="#flag-uk-us"></use>
+          </svg>
+        </button>
         <a href="#servicios">
-          <button>Servicios</button>
+          <button data-en="Services">Servicios</button>
         </a>
         <a href="#equipo">
-          <button>Nosotros</button>
+          <button data-en="About Us">Nosotros</button>
         </a>
         <a href="#contacto">
-          <button>Contacto</button>
+          <button data-en="Contact">Contacto</button>
         </a>
       </nav>
     </header>
@@ -94,21 +155,31 @@
         </button>
       </div>
       <nav class="aside-menu-buttons">
+        <button
+          class="lang-toggle"
+          type="button"
+          title="View in English"
+          aria-label="Switch language to English"
+        >
+          <svg class="lang-flag" viewBox="0 0 60 40" aria-hidden="true">
+            <use href="#flag-uk-us"></use>
+          </svg>
+        </button>
         <a href="#servicios">
-          <button>Servicios</button>
+          <button data-en="Services">Servicios</button>
         </a>
         <a href="#equipo">
-          <button>Nosotros</button>
+          <button data-en="About Us">Nosotros</button>
         </a>
         <a
           href="download/Catalogo Conectores Industriales DCM_004.pdf"
           download="Catalogo Conectores Industriales DCM"
           target="_blank"
         >
-          <button>Repuestos</button>
+          <button data-en="Spare Parts">Repuestos</button>
         </a>
         <a href="#contacto">
-          <button>Contacto</button>
+          <button data-en="Contact">Contacto</button>
         </a>
       </nav>
     </aside>
@@ -118,13 +189,15 @@
         <li>
           <div class="slide-content">
             <div class="slide-card">
-              <h1>Servicios hidráulicos.</h1>
-              <p>
+              <h1 data-en="Hydraulic Services.">Servicios hidráulicos.</h1>
+              <p
+                data-en="Count on us to keep your hydraulic equipment in optimal condition."
+              >
                 Cuente con nosotros para mantener sus equipos hidráulicos en
                 optimas condiciones.
               </p>
               <a href="#contacto">
-                <button>Contacto</button>
+                <button data-en="Contact">Contacto</button>
               </a>
             </div>
             <img src="./images/carrousel/1.jpeg" class="slide-pic-desktop" />
@@ -137,13 +210,15 @@
         <li>
           <div class="slide-content">
             <div class="slide-card">
-              <h1>Servicios Eléctricos</h1>
-              <p>
+              <h1 data-en="Electrical Services">Servicios Eléctricos</h1>
+              <p
+                data-en="We carry out a wide variety of electrical work, from PLCs and speed drives to servomotors, and more."
+              >
                 Realizamos una amplia variedad de trabajos eléctricos desde PLC,
                 variadores de velocidad, servomotores, etc.
               </p>
               <a href="#contacto">
-                <button>Contacto</button>
+                <button data-en="Contact">Contacto</button>
               </a>
             </div>
             <img
@@ -160,14 +235,16 @@
         <li>
           <div class="slide-content">
             <div class="slide-card">
-              <h1>Repuestos Industriales</h1>
-              <p>
+              <h1 data-en="Industrial Spare Parts">Repuestos Industriales</h1>
+              <p
+                data-en="We can advise you and find the right spare part for your needs. We also offer sourcing of second-hand parts."
+              >
                 Podemos asesorarle y encontrar el repuesto indicado a su
                 necesidad. También contamos con busqueda de repuestos de segunda
                 mano.
               </p>
               <a href="#contacto">
-                <button>Contacto</button>
+                <button data-en="Contact">Contacto</button>
               </a>
             </div>
             <img
@@ -193,78 +270,92 @@
       </div>
     </div>
     <section class="content">
-      <h1>Servicios Industriales</h1>
+      <h1 data-en="Industrial Services">Servicios Industriales</h1>
       <div class="services" id="servicios">
-        <div class="service-card">
+        <div class="service-card" data-href="mantenimiento-hidraulico.html">
           <img src="./images/icons/precision_manufacturing.png" alt="" />
-          <h2>Mantenimiento Hidráulico</h2>
-          <p>
+          <h2 data-en="Hydraulic Maintenance">Mantenimiento Hidráulico</h2>
+          <p
+            data-en="Count on us to keep your hydraulic equipment in optimal condition."
+          >
             Cuente con nosotros para mantener sus equipos hidráulicos en óptimas
             condiciones.
           </p>
           <a href="#contacto">
-            <button>Contactanos</button>
+            <button data-en="Contact us">Contactanos</button>
           </a>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-href="mantenimiento-electrico.html">
           <img src="./images/icons/robot_arm.png" alt="" />
-          <h2>Mantenimiento Eléctrico</h2>
-          <p>
+          <h2 data-en="Electrical Maintenance">Mantenimiento Eléctrico</h2>
+          <p
+            data-en="We carry out a wide variety of electrical work, from PLCs and speed drives to servomotors, and more."
+          >
             Realizamos una amplia variedad de trabajos eléctricos desde PLC,
             variadores de velocidad, servomotores, etc.
           </p>
           <a href="#contacto">
-            <button>Contactanos</button>
+            <button data-en="Contact us">Contactanos</button>
           </a>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-href="reubicacion-de-maquinas.html">
           <img src="./images/icons/location.png" alt="" />
-          <h2>Reubicación de maquinas</h2>
-          <p>
+          <h2 data-en="Machine Relocation">Reubicación de maquinas</h2>
+          <p
+            data-en="We handle the disassembly and reassembly of equipment after a relocation."
+          >
             Realizamos el desarme y armado del equipo luego de una reubicación.
           </p>
           <a href="#contacto">
-            <button>Contactanos</button>
+            <button data-en="Contact us">Contactanos</button>
           </a>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-href="capacitacion-en-planta.html">
           <img src="./images/icons/people.png" alt="" />
-          <h2>Capacitación en planta</h2>
-          <p>
+          <h2 data-en="On-site Training">Capacitación en planta</h2>
+          <p
+            data-en="We provide training for maintenance staff and operators, both theoretical and hands-on."
+          >
             Dictamos capacitaciones para personal de mantenimiento y operadores
             de forma teórica y práctica.
           </p>
           <a href="#contacto">
-            <button>Contáctenos</button>
+            <button data-en="Contact us">Contáctenos</button>
           </a>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-href="repuestos-industriales.html">
           <img src="./images/icons/gears.png" alt="" />
-          <h2>Repuestos Industriales</h2>
-          <p>
+          <h2 data-en="Industrial Spare Parts">Repuestos Industriales</h2>
+          <p
+            data-en="We can advise you and find the right spare part for your needs. We also offer sourcing of second-hand parts."
+          >
             Podemos asesorarle y encontrar el repuesto indicado a su necesidad.
             También contamos con busqueda de repuestos de segunda mano.
           </p>
           <a href="#contacto">
-            <button>Contactanos</button>
+            <button data-en="Contact us">Contactanos</button>
           </a>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-href="auditorias.html">
           <img src="./images/icons/checklist.png" alt="" />
-          <h2>Auditorias</h2>
-          <p>
+          <h2 data-en="Audits">Auditorias</h2>
+          <p
+            data-en="We produce reports on the current condition of your equipment and deliver an effective maintenance plan."
+          >
             Generamos informes del estado actual de su equipo y le entregamos un
             plan de mantenimiento efectivo.
           </p>
           <a href="#contacto">
-            <button>Contactanos</button>
+            <button data-en="Contact us">Contactanos</button>
           </a>
         </div>
       </div>
 
       <div class="team" id="equipo">
-        <h1>Nosotros</h1>
-        <p>
+        <h1 data-en="About Us">Nosotros</h1>
+        <p
+          data-en="Welcome to DCM Industrial! We are a young, dynamic company specialized in solving hydraulic, electrical, and spare-parts problems in the industrial field. Our focus is on delivering efficient, effective solutions to keep your operations running smoothly. With expertise in plastic injection molding machines, our highly trained team is committed to excellence on every project. At DCM Industrial we don't just provide services, we offer solutions that help you reach your business goals. Let us be your trusted partner in your company's success!"
+        >
           ¡Bienvenidos a DCM Industrial! Somos una empresa joven y dinámica
           especializada en resolver problemas hidráulicos, eléctricos y de
           repuestos en el ámbito industrial. Nuestro enfoque se centra en
@@ -296,10 +387,11 @@
       </div>
 
       <div class="clients">
-        <h1>Clientes que confian en nosotros</h1>
+        <h1 data-en="Clients Who Trust Us">Clientes que confian en nosotros</h1>
 
-        <div class="client-list">
-          <img class="client-logo" src="./images/clients/1.png" alt="" />
+        <div class="clients-marquee">
+          <div class="client-list">
+            <img class="client-logo" src="./images/clients/1.png" alt="" />
           <img class="client-logo" src="./images/clients/2.png" alt="" />
           <img class="client-logo" src="./images/clients/3.png" alt="" />
           <img class="client-logo" src="./images/clients/4.png" alt="" />
@@ -315,13 +407,16 @@
           <img class="client-logo" src="./images/clients/14.png" alt="" />
           <img class="client-logo" src="./images/clients/16.png" alt="" />
           <img class="client-logo" src="./images/clients/17.png" alt="" />
+          </div>
         </div>
       </div>
 
       <div class="contact" id="contacto">
         <div class="contact-card">
-          <h1>Contáctanos</h1>
-          <p>¡Confíe en nosotros para mantener su negocio en movimiento!</p>
+          <h1 data-en="Contact Us">Contáctanos</h1>
+          <p data-en="Trust us to keep your business moving!">
+            ¡Confíe en nosotros para mantener su negocio en movimiento!
+          </p>
 
           <div class="contact-card-body">
             <div>
@@ -341,7 +436,9 @@
               </p>
             </div>
             <div>
-              <h4>Consultas y venta de repuestos</h4>
+              <h4 data-en="Inquiries and spare parts sales">
+                Consultas y venta de repuestos
+              </h4>
               <p>
                 <span class="material-symbols-outlined"> mail </span>
                 info@dcmindustrial.com
@@ -380,7 +477,7 @@
                 />
               </g>
             </svg>
-            Contactar
+            <span data-en="Contact">Contactar</span>
           </button>
         </a>
       </div>
@@ -392,16 +489,16 @@
       </div>
       <div class="footer-nav-buttons">
         <a href="#servicios">
-          <button>Servicios</button>
+          <button data-en="Services">Servicios</button>
         </a>
         <a href="#equipo">
-          <button>Nosotros</button>
+          <button data-en="About Us">Nosotros</button>
         </a>
         <a href="#clients">
-          <button>Repuestos</button>
+          <button data-en="Spare Parts">Repuestos</button>
         </a>
         <a href="#contacto">
-          <button>Contacto</button>
+          <button data-en="Contact">Contacto</button>
         </a>
       </div>
       <a
